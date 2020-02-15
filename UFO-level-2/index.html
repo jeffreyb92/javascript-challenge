@@ -36,8 +36,21 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Filter by</label>
+                          </div>
+                          <!-- <select class="custom-select" id="inputGroupSelect01"> -->
+                            <input type="checkbox" aria-label="Date/Time" value="datetime" checked="checked"> Date/Time <br>
+                            <input type="checkbox" aria-label="City" value="city"> City <br>
+                            <input type="checkbox" aria-label="State" value="state"> State <br>
+                            <input type="checkbox" aria-label="Country" value="country"> Country <br>
+                            <input type="checkbox" aria-label="Shape" value="shape"> Shape
+                            <hr>
+                          <!-- </select> -->
+                          
+                        </div>
+                        <input class="form-control" id="filterInput" type="text" placeholder="1/11/2010">
                       </li>
                     </ul>
                   </div>
